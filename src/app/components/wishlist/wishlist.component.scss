@@ -1,0 +1,66 @@
+.book-description { 
+    h2 { 
+      margin-bottom: 2px;
+    }
+
+    p { 
+      margin-bottom: 2px;
+      color:#878787;
+    }
+
+    
+
+    .price-container { 
+      .dicounted-price { 
+        margin-top: 10px;
+        font-size: large;
+      }
+      .actual-price {
+        margin-top: 10px;
+        margin-left: 5px; 
+        text-decoration: line-through;
+        color: gray;
+      }
+    }
+  }
+
+.wishlist-container {
+  margin-top:40px; 
+  margin-left: 170px;
+  margin-right: 170px;
+  border: 1px solid #E4E4E4;
+	.wishlist-header { 
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    height:50px;
+		h2 { 
+      margin-left:20px;
+      margin-bottom: 0px;
+		}
+	}
+  .book-and-delete-container{
+    border-top: 1px solid #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .book-container { 
+      display: flex;
+      align-items: center;
+  
+      .image-container
+      {
+        padding:20px;
+      }
+      
+    }
+    .delete-container { 
+
+			mat-icon { 
+        margin-right: 40px;
+        color:#878787
+			}
+		}
+  }
+
+}

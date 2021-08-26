@@ -1,0 +1,49 @@
+<div class="wishlist-container">
+    <div class="wishlist-header">
+      <h2>My Wishlist (02)</h2>
+    </div>
+    <div class="book-and-delete-container">
+      <div class="book-container">
+        <div class="image-container">
+          <img src="../../../assets/Image 11.png" alt="">
+        </div>
+        <div class="book-description">
+          <h2>{{Book["name"]}}</h2>
+          <p>by {{Book["author"]}}</p>
+          <div class="price-container" fxLayout="row">
+            <div class="dicounted-price">
+              <b>Rs. 200</b>
+            </div>
+            <div class="actual-price">
+              Rs. {{Book["price"]}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="delete-container">
+        <mat-icon>delete</mat-icon>
+      </div>
+    </div>
+    <div class="book-and-delete-container">
+      <div class="book-container">
+        <div class="image-container">
+          <img src="../../../assets/books/Image 11.png" alt="">
+        </div>
+        <div class="book-description">
+          <h2>{{Book["name"]}}</h2>
+          <p>by {{Book["author"]}}</p>
+          <div class="price-container" fxLayout="row">
+            <div class="dicounted-price">
+              <b>Rs. {{Book["discountPrice"]}}</b>
+            </div>
+            <div class="actual-price">
+              Rs. {{Book["price"]}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="delete-container">
+        <mat-icon>delete</mat-icon>
+      </div>
+    </div>
+  </div>

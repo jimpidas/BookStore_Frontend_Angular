@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="book-image-container">
+      <div class="book-image">
+        <img src="../../../assets/Image 11@2x.png" alt="">
+      </div>
+      <div class="action-buttons">
+        <button mat-stroked-button class="add-to-bag" (click)=AddToBag()>ADD TO BAG</button>
+        <button mat-stroked-button class="add-to-wishlist" (click)=AddToWishlist()>
+          <mat-icon>favorite</mat-icon>
+          WISHLIST
+        </button>
+      </div>
+    </div>
+    <div class="book-details-container">
+      <div class="book-description">
+        <h2>Don't Make me Think</h2>
+        <p>by Steve Krug</p>
+        <div class="rating-container" fxLayout="row">
+          <div class="rating" fxLayout="row" fxLayoutAlign="center center">
+            <span>4</span> 
+            <div class="star-container" fxLayoutAlign="center center">
+              <mat-icon class="star">star</mat-icon>
+            </div>
+          </div>
+          <div class="no-of-people-rated">
+            3
+          </div>
+        </div>
+        <div class="price-container" fxLayout="row">
+          <div class="dicounted-price">
+            <b>Rs. 800</b>
+          </div>
+          <div class="actual-price">
+            Rs. 1500
+          </div>
+        </div>
+      </div>
+      <div class="separater">
+      </div>
+      <div class="book-details">
+        <div class="book-details-info" fxLayout="row">
+          <div class="dot"></div><p> Book Detail</p>
+        </div>
+        <div class="book-details-para">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada in lacus id tincidunt. Nam tincidunt varius purus, sit amet laoreet elit mollis euismod. Sed finibus pretium ligula, nec viverra nibh. Praesent ut tempus metus. Vivamus scelerisque vel leo non sodales. Nam nec ultricies sem. Integer quis elementum eros, non auctor erat. Aliquam luctus eu nisl quis dapibus. Quisque convallis erat eu arcu lacinia, varius dignissim augue fringilla. Quisque tincidunt, lorem vitae elementum auctor, nulla leo efficitur lectus, a vestibulum metus elit sit amet lectus. Sed rutrum erat mauris, vulputate consectetur sem facilisis vel. Aenean congue vehicula tempor.
+        </div>
+      </div>
+      <div class="separater">
+      </div>
+      <div class="customer-feedback">
+        <h1>Customer Feedback</h1>
+        <div class="ratingcontainer">
+          <h3>Overall Rating</h3>
+         
+          <mat-form-field appearance="outline">
+            <textarea matInput
+                      cdkTextareaAutosize
+                      cdkAutosizeMinRows="4"
+                      cdkAutosizeMaxRows="5" [(ngModel)]="Review"></textarea>
+          </mat-form-field>
+          <button mat-raised-button class="submit-button" (click)=onFeedbackClicked()>Submit</button>
+        </div>
+        <div class="all-customer-ratings" *ngFor="let ratingObj of ratingsArray">  
+        <div class="customer-ratings">
+          <div class="profile-circle-container">
+            <div class="profile-circle">
+              AC
+            </div>
+          </div>
+         
+        
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  

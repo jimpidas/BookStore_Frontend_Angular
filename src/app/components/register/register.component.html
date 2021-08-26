@@ -1,0 +1,35 @@
+<div [formGroup]="registerForm">
+  
+    <div class="fullname">
+      <p>Full Name</p>
+      <mat-form-field appearance="outline" class="noWrapper" >
+        <input matInput placeholder="" formControlName="FullName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.FullName.errors }"/>
+        <mat-hint *ngIf="submitted && f.fullname.errors">Enter your full name</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="emailId">
+      <p>Email Id</p>
+      <mat-form-field appearance="outline" class="noWrapper" >
+        <input matInput placeholder="" formControlName="Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.Email.errors }"/>
+        <mat-hint *ngIf="submitted && f.email.errors">Enter your email id</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="password-container">
+      <p>Password</p>
+      <mat-form-field appearance="outline">
+        <input matInput [type]="hide ? 'password' : 'text'" formControlName="Password" required>
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        <mat-hint *ngIf="submitted && f.password.errors">Enter your password</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="mobilenumber">
+      <p>Mobile Number</p>
+      <mat-form-field appearance="outline" class="noWrapper" >
+        <input matInput placeholder="" formControlName="MobileNo" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.MobileNo.errors }"/>
+        <mat-hint *ngIf="submitted && f.mobile.errors">Enter your mobile number</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="button">
+      <button mat-flat-button class="buttonSignup" (click)=submit()>Signup</button>
+    </div>
+    </div>
