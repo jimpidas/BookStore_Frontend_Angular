@@ -20,6 +20,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { BookDisplayComponent } from './components/book-display/book-display.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { StartRatingComponent } from './components/start-rating/start-rating.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { WishlistComponent } from './components/wishlist/wishlist.component';
     ForgotpasswordComponent,
     BookDisplayComponent,
     BookDetailsComponent,
-    WishlistComponent
+    WishlistComponent,
+    StartRatingComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

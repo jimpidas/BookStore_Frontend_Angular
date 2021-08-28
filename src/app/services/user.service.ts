@@ -35,10 +35,25 @@ export class UserService {
   getBooks () {
     return this.httpService.get('Book',false);
   }
-  getBook = (id:number) =>{
-    return this.httpService.get(`Book/${id}`,false);
+  getCarts(){
+    return this.httpService.get('Cart',this.getHeaders());
+  }
+  getBook = (bookId:number) =>{
+    return this.httpService.get(`Book/${bookId}`,false);
   }
   addToWishList = (id:number)=>{
     return this.httpService.post(`WishList/${id}`,id,this.getHeaders());
+  }
+  getWishList = () =>{
+    return this.httpService.get('WishList',this.getHeaders());
+  }
+  addToCart= (id:number)=>{
+    return this.httpService.post(`Cart/${id}`,id,this.getHeaders());
+  }
+  getFeedback = ()=>{
+    return this.httpService.get('Review',this.getHeaders());
+  }
+  addFeedback = (data:any) =>{
+    return this.httpService.post('Review',data,this.getHeaders());
   }
 }

@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="bookstorelogo" >
+    <div class="bookstorelogo" (click)=showHome() >
         <img src="../../../assets/education.svg" alt="bookstorelogo" >
         <h3>Bookstore</h3>
     </div>
@@ -31,7 +31,7 @@
           </div>
           <div class="line">
           </div>
-          <div class="wishlist" >
+          <div class="wishlist" (click)=showWishList()>
             <mat-icon >favorite_border</mat-icon>
             <p> Wishlist </p>
           </div>
@@ -40,7 +40,7 @@
             <p> My orders </p>
           </div>
         </div>
-        <div class="cart" >
+        <div class="cart" (click)=showCart()>
           <mat-icon class="material-icons-outlined">shopping_cart</mat-icon>
           <p>Cart</p>
         </div>    

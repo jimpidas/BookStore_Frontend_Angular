@@ -59,7 +59,7 @@
         }
     
         .rating-container { 
-          
+         
           .rating { 
             display: flex;
             width: 40px;
@@ -74,6 +74,8 @@
             .star{
                 margin-top: 5px;
                 margin-left: 2px;
+                border-radius: 0%;
+                border-color: #878787;
               font-size: small;
               vertical-align: middle !important;
             }

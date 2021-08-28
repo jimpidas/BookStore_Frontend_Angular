@@ -13,8 +13,8 @@
     </div>
     <div class="book-details-container">
       <div class="book-description">
-        <h2>Don't Make me Think</h2>
-        <p>by Steve Krug</p>
+        <h2>{{Book["name"]}}</h2>
+        <p>by {{Book["author"]}}</p>
         <div class="rating-container" fxLayout="row">
           <div class="rating" fxLayout="row" fxLayoutAlign="center center">
             <span>4</span> 
@@ -31,7 +31,7 @@
             <b>Rs. 800</b>
           </div>
           <div class="actual-price">
-            Rs. 1500
+            Rs. {{Book["price"]}}
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
         <h1>Customer Feedback</h1>
         <div class="ratingcontainer">
           <h3>Overall Rating</h3>
-         
+          <app-start-rating [rating]="rating"  [starCount]="starCount" (ratingUpdated)="onRatingChanged($event)"></app-start-rating>
           <mat-form-field appearance="outline">
             <textarea matInput
                       cdkTextareaAutosize
@@ -67,7 +67,12 @@
               AC
             </div>
           </div>
-         
+          <div class="customer-rating-content">
+            <h2>Prabal Das</h2>
+            <!-- <h2>{{ratingObj | stringify}}</h2> -->
+            <app-start-rating [review]=ratingObj.review  [starCount]="5"></app-start-rating>
+            <p>{{ratingObj["feedback"]}}
+            </p>
         
         </div>
       </div>

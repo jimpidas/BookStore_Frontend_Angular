@@ -31,6 +31,7 @@
   border: 1px solid #E4E4E4;
 	.wishlist-header { 
     display: flex;
+    
     align-items: center;
     background-color: #F5F5F5;
     height:50px;
@@ -44,9 +45,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
     .book-container { 
       display: flex;
       align-items: center;
+      flex-direction: row;
   
       .image-container
       {

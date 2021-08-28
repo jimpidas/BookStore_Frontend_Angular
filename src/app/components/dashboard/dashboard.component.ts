@@ -32,5 +32,13 @@ export class DashboardComponent implements OnInit {
   profileDialogShownToggle(){
     this.profileDialogShown = ! this.profileDialogShown;
   }
-
+  showWishList(){
+    this.route.navigate(['dashboard/wishlist']);
+  }
+  showCart(){
+    this.route.navigate(['dashboard/cart']);
+  }
+  showHome(){
+    this.route.navigate(['dashboard/books']);
+  }
 }

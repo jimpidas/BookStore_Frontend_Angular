@@ -7,6 +7,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
 import { BookDisplayComponent } from './components/book-display/book-display.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { CartComponent } from './components/cart/cart.component';
 
 const routes: Routes = [{
   path: '',component: SignupComponent,
@@ -18,6 +20,8 @@ const routes: Routes = [{
    children: [
     { path: 'books',component:BookDisplayComponent},
     { path: 'details/:bookId',component:BookDetailsComponent},
+    { path: 'wishlist',component:WishlistComponent},
+    { path: 'cart',component:CartComponent},
    ]
   },
    {path: 'forgotpassword', component: ForgotpasswordComponent}
