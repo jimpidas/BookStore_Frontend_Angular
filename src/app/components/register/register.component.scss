@@ -6,14 +6,7 @@
   }
  
   .password-container{
-      margin: 2px 2px 2px 2px;
-   
-   
-    height: 35px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #E2E2E2;
-    border-radius: 2px;
-    opacity: 1;
+    
     mat-icon{
       color:gray;
     }
@@ -27,43 +20,23 @@
     width: 100%;
     color: white;
     height: 40px;
+    margin-top: 30px;
   }
-  .fullname{
-    margin: 2px 2px 2px 2px;
-    
-    height: 35px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #FF001C;
-    border-radius: 2px;
-    opacity: 1;
-  }
-  .emailId{
-    margin: 2px 2px 2px 2px;
-    height: 35px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #E2E2E2;
-    border-radius: 2px;
-    opacity: 1;
-  }
-
-  .mobilenumber{
-    margin: 2px 2px 2px 2px;
-    height: 35px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #E2E2E2;
-    border-radius: 2px;
-    opacity: 1;
-  }
-
+ 
   p{
       input{
-    margin: 2px 2px 2px 2px;
-    height: 35px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #E2E2E2;
-    border-radius: 2px;
-    opacity: 1;
-        column-gap: 30px;
+        width: 100%; 
+        height: 30px;
+        
 }
     
+  }
+  .noWrapper{
+    width: 100%; 
+    height: 30px;
+   
+  } 
+  p{
+     
+      margin-top: 10px;
   }
